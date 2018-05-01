@@ -1,4 +1,7 @@
 test_functions.sh
 
+# Ignore Mongo data
+mongo_data/*
+
 # Ignore Secrets
 github.pem
