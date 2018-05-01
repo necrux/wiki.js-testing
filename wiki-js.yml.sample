@@ -9,14 +9,14 @@
 # Title of this site
 # ---------------------------------------------------------------------
 
-#title: Test Wiki
+title: Wiki
 
 # ---------------------------------------------------------------------
 # Full public path to the site, without the trailing slash
 # ---------------------------------------------------------------------
 # INCLUDE CLIENT PORT IF NOT 80/443!
 
-host: http://wiki.example.com
+host: http://localhost
 
 # ---------------------------------------------------------------------
 # Port the main server should listen to (80 by default)
@@ -67,7 +67,7 @@ auth:
     clientId: GOOGLE_CLIENT_ID
     clientSecret: GOOGLE_CLIENT_SECRET
   microsoft:
-    enabled: false
+    enabled: true
     clientId: MS_APP_ID
     clientSecret: MS_APP_SECRET
   facebook:
@@ -75,7 +75,7 @@ auth:
     clientId: FACEBOOK_APP_ID
     clientSecret: FACEBOOK_APP_SECRET
   github:
-    enabled: true
+    enabled: false
     clientId: GITHUB_CLIENT_ID
     clientSecret: GITHUB_CLIENT_SECRET
   slack:
@@ -109,20 +109,20 @@ auth:
 # ---------------------------------------------------------------------
 # Use a long and unique random string (256-bit keys are perfect!)
 
-sessionSecret: PxzGMpV3MXSRn6KFNh7PlV53PTjhtzQlJQDz3m3Sxrl8CWt6Z6csFg9LrGfcnPNSzThPdkxDMJLdCPdRZnJXmSfNmJ9SscxrcpwkrKTQ7NTz5VrRkzsV6vtpcvSsf789bcf7pKN88xdBzT4SDFF6dXZ7njrgkKVN56V5ZRDqXvBzD4vFmFlVpKW8NXdHjNRQlrGDlMlJtNjj22HcVzdVrv5cL2gn6skdwqGTN6fxBPXZV3lspZkj3thWd2N7l2Rs 
+sessionSecret: 1234567890abcdefghijklmnopqrstuvxyz
 
 # ---------------------------------------------------------------------
 # Database Connection String
 # ---------------------------------------------------------------------
 
-db: mongodb://wiki.db:27017/wiki
+db: mongodb://localhost:27017/wiki
 
 # ---------------------------------------------------------------------
 # Git Connection Info
 # ---------------------------------------------------------------------
 
 git:
-  url: git@github.com:TrueAbility/ta-docs.git
+  url: https://github.com/Organization/Repo
   branch: master
   auth:
 
@@ -130,19 +130,16 @@ git:
     type: ssh
 
     # Only for Basic authentication:
-    #username: Marty
-    #password: MartyMcFly88
+    username: marty
+    password: MartyMcFly88
 
     # Only for SSH authentication:
-    privateKey: /etc/wiki/keys/github.pem
+    privateKey: /etc/wiki/keys/git.pem
 
     sslVerify: true
-    signature:
-      name: necrux
-      email: whendersonii@gmail.com
 
   # Default email to use as commit author
-  serverEmail: ops@example.com
+  serverEmail: marty@example.com
 
   # Whether to use user email as author in commits
   showUserEmail: true

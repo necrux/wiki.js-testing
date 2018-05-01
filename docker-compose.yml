@@ -12,6 +12,7 @@ services:
   wiki.example.com:
     image: requarks/wiki:latest
     environment:
+      TITLE: NECRUX
       WIKI_ADMIN_EMAIL: ops@example.com
     depends_on:
       - wiki.db
