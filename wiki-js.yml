@@ -122,7 +122,7 @@ db: mongodb://wiki.db:27017/wiki
 # ---------------------------------------------------------------------
 
 git:
-  url: git@github.com:TrueAbility/ta-docs.git
+  url: git@github.com:orginzation/repo.git
   branch: master
   auth:
 
@@ -138,8 +138,8 @@ git:
 
     sslVerify: true
     signature:
-      name: necrux
-      email: whendersonii@gmail.com
+      name: user.name
+      email: user.email
 
   # Default email to use as commit author
   serverEmail: ops@example.com
