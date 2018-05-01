@@ -1,0 +1,23 @@
+version: '3'
+services:
+  wiki.db:
+    image: mongo
+    environment:
+      - 'MONGO_LOG_DIR=/dev/null'
+    expose:
+      - '27017'
+    volumes:
+      - ./mongo_data:/data/db
+    command: '--smallfiles --bind_ip 0.0.0.0'
+  wiki.example.com:
+    image: requarks/wiki:latest
+    environment:
+      WIKI_ADMIN_EMAIL: ops@example.com
+    depends_on:
+      - wiki.db
+    working_dir: /var/wiki
+    ports:
+      - '80:80'
+    volumes:
+      - ./wiki-js.yml:/var/wiki/config.yml
+      - ./github.pem:/etc/wiki/keys/github.pem

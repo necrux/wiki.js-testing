@@ -1,0 +1,4 @@
+test_functions.sh
+
+# Ignore Secrets
+github.pem
