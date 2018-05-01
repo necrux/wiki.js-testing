@@ -18,7 +18,7 @@ You can read about OAuth configuration for each method [here](https://docs.requa
     * Password: admin123
 
 ### Github Integration
-In addition to the git options in wiki-js.yml, the following needs to be added under auth:
+In addition to the git options in wiki-js.yml, the following needs to be added under **auth**:
 
     * signature:
         - name:
