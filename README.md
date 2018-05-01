@@ -11,15 +11,15 @@ By default I have the following authentication methods active:
     * Google
     * Github
 
-You can read about OAuth configuration for each method [here](https://docs.requarks.io/wiki/install/authentication). The default acount details are below:
+You can read about OAuth configuration for each method [here](https://docs.requarks.io/wiki/install/authentication). The default acount details are below:<br>
     * User:     {{serverEmail}} (defined in wiki-js.yml)
     * Password: admin123
 
 ### Github Integration
-In addition to the git options in wiki-js.yml, the following needs to be added under auth:
+In addition to the git options in wiki-js.yml, the following needs to be added under auth:<br>
     * signature:
-      - name:
-      - email:
+        - name:
+        - email:
 
 These options configure git user.name and user.email respectively. 
 
