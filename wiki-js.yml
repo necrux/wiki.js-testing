@@ -122,7 +122,6 @@ db: mongodb://wiki.db:27017/wiki
 # ---------------------------------------------------------------------
 
 git:
-  #url: https://github.com/TrueAbility/ta-docs
   url: git@github.com:TrueAbility/ta-docs.git
   branch: master
   auth:
@@ -131,7 +130,7 @@ git:
     type: ssh
 
     # Only for Basic authentication:
-    #username: necrux
+    #username: Marty
     #password: MartyMcFly88
 
     # Only for SSH authentication:
