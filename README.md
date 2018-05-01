@@ -24,7 +24,7 @@ In addition to the git options in wiki-js.yml, the following needs to be added u
         - name:
         - email:
 
-These options configure git user.name and user.email respectively. 
+These options configure git **user.name** and **user.email** respectively. 
 
 Create github.pem with mode 600. This will contain the SSH private key (w/o a passphrase) used to access the Github repo.
 
