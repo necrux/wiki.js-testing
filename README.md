@@ -3,7 +3,7 @@
 Below are my personal notes for getting wiki.js up and running. The docker-compose file is made up of 2 containers:
 
     * MongoDB
-    * [wiki.js](https://wiki.js.org/)
+    * Wiki.js (https://wiki.js.org/)
 
 ### Authentication
 By default I have the following authentication methods active:
